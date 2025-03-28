@@ -1,0 +1,97 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+. .magazine-cover {
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-image img {
+    width: 100%;
+    display: block;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.articles {
+    padding: 20px;
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+.article h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.article .caption {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.decorative-line {
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+.subscribe-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #0056b3;
+}
+
+.featured-image {
+    position: relative;
+}
+
+.featured-image img {
+    width: 100%;
+    display: block;
+}
+
+.featured-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
